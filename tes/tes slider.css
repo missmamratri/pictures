@@ -1,0 +1,26 @@
+.slider {
+  width: 500px; /* Sesuaikan lebar slider */
+  height: 300px; /* Sesuaikan tinggi slider */
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Animasi transisi */
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Sesuaikan bagaimana gambar ditampilkan */
+}
